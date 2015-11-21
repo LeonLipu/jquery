@@ -1,21 +1,46 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
 
-    <div id="myid">hello</div>
-
-    <script type="text/javascript">
-      $(document).ready(function() {
-
-        $("#myid").text("changed value ");
-        var text= $("#myid").text();
+<head>
+  <meta charset="utf-8">
+  <title>tutorialone </title>
+  <script src="./jquery.js" charset="utf-8"></script>
+</head>
 
 
-      }):
-    </script>
-  </body>
+<div id="tree">
+
+</div>
+
+
+</body>
+
+<script type="text/javascript">
+  $(document).ready(function() {
+
+    var json = {
+      "project": {
+        "ts1": ["tc1", "tc2", "tc3"],
+        "ts2": ["tc1", "tc2", "tc3"]
+      }
+    };
+
+
+
+
+    $("#tree").html("<div id ='expand'> nothing </div> ");
+
+    $("#expand").click(function() {
+      alert("this nothing ");
+    });
+    $('#tree').append('<div id="onid">something</div>');
+    $('#onid').on('click',function(){
+      alert('on method is invoked');
+    });
+
+    //document.getElementById("tree").innerHTML="hello wometh";
+  });
+</script>
+
+
 </html>
