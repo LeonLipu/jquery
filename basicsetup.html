@@ -35,8 +35,13 @@
     });
     $('#tree').append('<div id="onid">something</div>');
     $('#onid').on('click',function(){
-      alert('on method is invoked');
+      
+      var text=  $('#onid').text();
+      alert(text);
     });
+
+
+
 
     //document.getElementById("tree").innerHTML="hello wometh";
   });
